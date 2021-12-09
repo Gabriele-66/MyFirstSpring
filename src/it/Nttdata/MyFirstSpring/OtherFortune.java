@@ -4,6 +4,6 @@ public class OtherFortune implements FortuneService {
     
     @Override
     public String getFortune() {
-        return "Other Fortune";
+        return "This is Other Fortune Service";
     }
 }
