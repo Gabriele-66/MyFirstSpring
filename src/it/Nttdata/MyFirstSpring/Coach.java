@@ -1,4 +1,4 @@
-package it.Nttdata.MyFirstSpring;
+package it.nttdata.myfirstspring;
 
 public interface Coach {
     

@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
   
-    <beans 
+    <bean 
         id="myCoach"
-        class="it.Nttdata.MyFirstSpring.BaseballCoach">
+        class="it.nttdata.myfirstspring.BaseballCoach">
     
-    </beans>
+    </bean>
  
 </beans>
