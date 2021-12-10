@@ -39,11 +39,16 @@ public class App {
         contextDISetter.close();
 
         //utilizzp annotations
-        System.out.println("---------- Annotations ----------");
+        System.out.println("---------- Setter Annotations 1 ----------");
         ClassPathXmlApplicationContext contextAnnotations = new ClassPathXmlApplicationContext(
                 "applicationContextAnnotation.xml");
         Coach myCoach4 = contextAnnotations.getBean("tennisCoach", Coach.class);
         System.out.println(myCoach4.getDailyWorkout());
+
+        System.out.println("---------- Setter Annotations 2 ----------");
+        Coach myCoach5 = contextAnnotations.getBean("soccerCoach", Coach.class);
+        System.out.println(myCoach5.getDailyWorkout());
+
         contextAnnotations.close();
     }
 }
