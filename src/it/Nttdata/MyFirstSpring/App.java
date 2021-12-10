@@ -28,9 +28,14 @@ public class App {
 
         // setter injection
         System.out.println("--------------------");
-        ClassPathXmlApplicationContext contextDISetter = new ClassPathXmlApplicationContext("applicationContextDISetter.xml");
+        ClassPathXmlApplicationContext contextDISetter = new ClassPathXmlApplicationContext(
+                "applicationContextDISetter.xml");
+        System.out.println("Getting bean");
         Coach myCoach3 = contextDISetter.getBean("TCoach", Coach.class);
         System.out.println(myCoach3.getDailyWorkout());
+        
+        // init e destroy
+        System.out.println("---------- Closing context ----------");
         contextDISetter.close();
     }
 }

@@ -6,4 +6,12 @@ public class OtherFortune implements FortuneService {
     public String getFortune() {
         return "This is Other Fortune Service";
     }
+
+    public void doInitStuffs() {
+        System.out.println("Inizializing Other Fortune Service...");
+    }
+
+    public void doDestroyStuffs() {
+        System.out.println("Destroying Other Fortune Service...");
+    }
 }

@@ -12,4 +12,12 @@ public class TennisCoach implements Coach {
         return "Try to hit the ball :P || " + fortuneService.getFortune();
     }
 
+    public void doInitStuffs() {
+        System.out.println("Inizializing Tennis Coach...");
+    }
+
+    public void doDestroyStuffs() {
+        System.out.println("Destroying Tennis Coach...");
+    }
+
 }

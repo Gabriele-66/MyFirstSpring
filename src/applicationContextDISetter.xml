@@ -4,11 +4,20 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
   
-    <bean id="TCoach" class="it.nttdata.myfirstspring.TennisCoach">
+    <bean 
+      id="TCoach" 
+      init-method="doInitStuffs"
+      destroy-method="doDestroyStuffs"
+      class="it.nttdata.myfirstspring.TennisCoach">
+
         <property name="fortuneService" ref="myFortuneService"></property>
     </bean>
     
-    <bean id="myFortuneService" class="it.nttdata.myfirstspring.OtherFortune">
+    <bean 
+      id="myFortuneService"
+      init-method="doInitStuffs"
+      destroy-method="doDestroyStuffs"
+      class="it.nttdata.myfirstspring.OtherFortune">
     </bean>
  
 </beans>
