@@ -1,9 +1,20 @@
 package it.nttdata.myfirstspring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component  //("pippo")
 public class TennisCoach implements Coach {
     private FortuneService fortuneService;
 
-    public void setFortuneService(FortuneService fortuneService) {
+    public TennisCoach() {}
+
+    @Autowired
+    public TennisCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+}
+
+    public void setFortuneService(FortuneService fortuneService) {  //non serve per annotation vedi costruttore
         this.fortuneService = fortuneService;
     }
 

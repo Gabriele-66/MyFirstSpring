@@ -37,5 +37,13 @@ public class App {
         // init e destroy
         System.out.println("---------- Closing context ----------");
         contextDISetter.close();
+
+        //utilizzp annotations
+        System.out.println("---------- Annotations ----------");
+        ClassPathXmlApplicationContext contextAnnotations = new ClassPathXmlApplicationContext(
+                "applicationContextAnnotation.xml");
+        Coach myCoach4 = contextAnnotations.getBean("tennisCoach", Coach.class);
+        System.out.println(myCoach4.getDailyWorkout());
+        contextAnnotations.close();
     }
 }

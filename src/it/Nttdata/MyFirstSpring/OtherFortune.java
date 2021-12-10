@@ -1,5 +1,8 @@
 package it.nttdata.myfirstspring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class OtherFortune implements FortuneService {
     
     @Override
