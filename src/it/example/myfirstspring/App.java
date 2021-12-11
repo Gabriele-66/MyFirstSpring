@@ -1,9 +1,9 @@
-package it.nttdata.myfirstspring;
+package it.example.myfirstspring;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import it.nttdata.myfirstspring.config.ComponentScanConfig;
+import it.example.myfirstspring.config.ComponentScanConfig;
 
 public class App {
     public static void main(String[] args) throws Exception {

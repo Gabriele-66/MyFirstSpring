@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
   
-    <bean id="myDICoach" class="it.nttdata.myfirstspring.BaseballCoach">
+  <bean id="myDICoach" class="it.example.myfirstspring.BaseballCoach">
         <constructor-arg ref="myFortuneService"/>
     </bean>
     
-    <bean id="myFortuneService" class="it.nttdata.myfirstspring.HappyFortune">
+  <bean id="myFortuneService" class="it.example.myfirstspring.HappyFortune">
     </bean>
  
 </beans>

@@ -1,4 +1,4 @@
-package it.nttdata.myfirstspring;
+package it.example.myfirstspring;
 
 public class TrackCoach implements Coach {
 

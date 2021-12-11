@@ -6,7 +6,7 @@
   
     <bean 
         id="myCoach"
-        class="it.nttdata.myfirstspring.TrackCoach">
+        class="it.example.myfirstspring.TrackCoach">
     </bean>
  
 </beans>

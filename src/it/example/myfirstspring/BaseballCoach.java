@@ -1,4 +1,4 @@
-package it.nttdata.myfirstspring;
+package it.example.myfirstspring;
 
 public class BaseballCoach implements Coach {
     private FortuneService fortuneservice;

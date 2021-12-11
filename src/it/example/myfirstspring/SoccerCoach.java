@@ -1,4 +1,4 @@
-package it.nttdata.myfirstspring;
+package it.example.myfirstspring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package it.nttdata.myfirstspring;
+package it.example.myfirstspring;
 
 import org.springframework.stereotype.Component;
 
